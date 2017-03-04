@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.roplus.spherecpov.ActivityMain"
+    android:background="@color/white">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="250dp"
+        android:background="@drawable/main_background_test"
+        android:id="@+id/imageView3" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/main_skier"
+        android:layout_marginStart="16dp"
+        android:layout_marginBottom="48dp"
+        android:id="@+id/imageView5"
+        android:layout_alignBottom="@+id/imageView3"
+        android:layout_alignParentStart="true" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/main_mountain"
+        android:id="@+id/imageView4"
+        android:layout_marginTop="40dp"
+        android:layout_alignTop="@+id/imageView5"
+        android:layout_alignParentStart="true" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/main_imageborder"
+        android:layout_marginEnd="22dp"
+        android:layout_marginTop="33dp"
+        android:id="@+id/imageView6"
+        android:layout_alignTop="@+id/imageView4"
+        android:layout_alignParentEnd="true" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/main_line"
+        android:layout_below="@+id/imageView6"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="21dp"
+        android:id="@+id/imageView7" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hello,"
+        android:textSize="25dp"
+        android:textColor="@color/colorAccent"
+        android:layout_alignBottom="@+id/imageView4"
+        android:layout_alignStart="@+id/imageView5"
+        android:layout_marginStart="14dp"
+        android:id="@+id/textViewHello" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="John Doe"
+        android:textColor="@color/colorAccent"
+        android:textSize="25dp"
+        android:id="@+id/textViewUserName"
+        android:layout_below="@+id/imageView4"
+        android:layout_alignStart="@+id/textViewHello" />
+
+    <Button
+        android:id="@+id/buttonRegister"
+        android:layout_width="58dp"
+        android:layout_height="53dp"
+        android:background="@drawable/main_register"
+        android:layout_marginTop="63dp"
+        android:layout_below="@+id/imageView7"
+        android:layout_alignEnd="@+id/imageView5" />
+
+    <Button
+        android:id="@+id/buttonBookses"
+        android:layout_width="56dp"
+        android:layout_height="55dp"
+        android:background="@drawable/main_bookses"
+        android:layout_alignBottom="@+id/buttonRegister"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:id="@+id/buttonCheckIn"
+        android:layout_width="60dp"
+        android:layout_height="57dp"
+        android:background="@drawable/main_checkin"
+        android:layout_alignBottom="@+id/buttonBookses"
+        android:layout_alignStart="@+id/imageView6" />
+
+    <Button
+        android:id="@+id/buttonAddSession"
+        android:layout_width="52dp"
+        android:layout_height="52dp"
+        android:background="@drawable/main_addsession"
+        android:layout_alignParentBottom="true"
+        android:layout_alignStart="@+id/buttonRegister"
+        android:layout_marginBottom="38dp" />
+
+    <Button
+        android:id="@+id/buttonDeleteSession"
+        android:layout_width="52dp"
+        android:layout_height="52dp"
+        android:background="@drawable/main_deletesession"
+        android:layout_alignBaseline="@+id/buttonAddSession"
+        android:layout_alignBottom="@+id/buttonAddSession"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:id="@+id/buttonSettings"
+        android:layout_width="52dp"
+        android:layout_height="52dp"
+        android:background="@drawable/main_settings"
+        android:layout_alignBaseline="@+id/buttonDeleteSession"
+        android:layout_alignBottom="@+id/buttonDeleteSession"
+        android:layout_alignStart="@+id/buttonCheckIn" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Register User"
+        android:textColor="@color/colorAccent"
+        android:textSize="14dp"
+        android:id="@+id/textView3"
+        android:layout_marginTop="8dp"
+        android:layout_below="@+id/buttonRegister"
+        android:layout_alignStart="@+id/textViewUserName"
+        android:layout_marginStart="7dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/colorAccent"
+        android:textSize="14dp"
+        android:text="Book Session"
+        android:layout_alignBaseline="@+id/textView3"
+        android:layout_alignBottom="@+id/textView3"
+        android:layout_toEndOf="@+id/textViewUserName"
+        android:id="@+id/textView4" />
+
+    <TextView
+        android:text="Checkin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/colorAccent"
+        android:textSize="14dp"
+        android:id="@+id/textView5"
+        android:layout_alignBaseline="@+id/textView4"
+        android:layout_alignBottom="@+id/textView4"
+        android:layout_alignEnd="@+id/buttonSettings" />
+
+    <TextView
+        android:text="Add Session"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/colorAccent"
+        android:textSize="14dp"
+        android:layout_below="@+id/buttonDeleteSession"
+        android:layout_alignEnd="@+id/textView3"
+        android:layout_marginTop="7dp"
+        android:id="@+id/textView6" />
+
+    <TextView
+        android:text="Delete Session"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/colorAccent"
+        android:textSize="14dp"
+        android:id="@+id/textView7"
+        android:layout_alignBaseline="@+id/textView6"
+        android:layout_alignBottom="@+id/textView6"
+        android:layout_alignStart="@+id/textView4" />
+
+    <TextView
+        android:text="Settings"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/colorAccent"
+        android:textSize="14dp"
+        android:layout_alignBaseline="@+id/textView7"
+        android:layout_alignBottom="@+id/textView7"
+        android:layout_alignStart="@+id/textView5"
+        android:id="@+id/textView8" />
+</RelativeLayout>
