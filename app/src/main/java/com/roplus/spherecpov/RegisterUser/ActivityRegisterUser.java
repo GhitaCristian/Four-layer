@@ -50,7 +50,7 @@ public class ActivityRegisterUser extends AppCompatActivity {
                     }
 
                     @Override
-                    public void nonExist(){
+                    public void notExist() {
                         User user = new User(editTextFirstName.getText().toString(), editTextLastName.getText().toString(),email.substring(0,index),email.substring(index+1,email.length()));
                         registerRepo.writeUser(user);
                     }

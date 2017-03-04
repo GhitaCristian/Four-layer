@@ -25,7 +25,7 @@ public class RegisterRepo {
         void notExist();
     }
 
-    public void checkUserExists(final String emailAddress, final String emailDomain){
+    public void checkUserExists(final String emailAddress, final String emailDomain, final onCheckUserExist onCheckUserExist){
         DatabaseReference myRef = database.getReference("Users");
         myRef.addValueEventListener(new ValueEventListener() {
             boolean userExists;
